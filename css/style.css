@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-color: #434455;
   --title-text-color: #2e2f42;
@@ -16,12 +25,21 @@ body {
   font-family: "Roboto", sans-serif;
   /*font-size: 16px;
   line-height: 1.5;*/
+  margin: 0;
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .link {
   text-decoration: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1158px;
+  outline: 1px solid red;
 }
 
 /*цвет основного текста
@@ -30,6 +48,10 @@ SLATE #434455*/
 NAVY BLUE #2E2F42*/
 /*цвет белый #FFFFFF*/
 /* акцент и лого  #4D5AE5*/
+
+.page-header {
+  outline: 1px solid green;
+}
 
 .logo {
   color: var(--accent-color);
@@ -81,14 +103,22 @@ NAVY BLUE #2E2F42*/
 
 /*Hero*/
 .hero {
+  outline: 1px solid red;
+  margin-top: 0;
+  margin-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
   background-color: var(--dark-bg);
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 48px;
+
   color: white;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
 }
 
@@ -104,25 +134,58 @@ NAVY BLUE #2E2F42*/
 }
 
 /*Features*/
+.feature-list {
+  margin-top: 0;
+  margin-bottom: 120px;
+}
 .feature-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+
   color: var(--title-text-color);
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 .feature-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
+/*What are we doing*/
+.page-example {
+  margin-top: 0;
+  margin-bottom: 120px;
+}
+.example-title {
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+
 /*Our Team*/
 .section-team {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 120px;
+
   background-color: var(--cloud-bg);
 }
+.our-team {
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+
 .team-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -130,10 +193,14 @@ NAVY BLUE #2E2F42*/
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-.team-item {
+.team-card {
+  margin-top: 0;
+  margin-bottom: 0;
   background-color: var(--button-text-primary);
 }
 .team-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
@@ -142,6 +209,12 @@ NAVY BLUE #2E2F42*/
 
 /*button*/
 .button {
+  /*display: inline-block;*/
+  width: 169px;
+  height: 56px;
+  align-items: center;
+  border-radius: 4px;
+  padding: 16 32;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.5;
