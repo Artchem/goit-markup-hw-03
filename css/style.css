@@ -374,7 +374,6 @@ NAVY BLUE #2E2F42*/
   display: flex;
   flex-wrap: wrap;
 }
-
 .project-card:not(:nth-child(3n)) {
   margin-right: 24px;
 }
@@ -388,6 +387,7 @@ NAVY BLUE #2E2F42*/
 .card-content {
   padding-top: 32px;
   padding-bottom: 32px;
+  border: 1px solid #e7e9fc;
 }
 .portfolio-title {
   margin-bottom: 8px;
